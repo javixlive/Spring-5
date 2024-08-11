@@ -21,7 +21,7 @@ Create a book Library using Visual Basic 6.0, this will allowed to install a win
 ![3](/assets/Manage_books.png)
 ![4](/assets/History.png)
 ![5](/assets/Wishlist.png)
-![6](/assets/History.png)
+![6](/assets/Favorites.png)
 ![7](/assets/sql_mega_library_relation.png)
 
 ## Instructions
