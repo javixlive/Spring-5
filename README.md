@@ -12,27 +12,31 @@ Interactive Movie Hub that shows Bollywood movies that allows you to search and 
 
 ## Objective
 
-Implement an API using C# with Net framework and SQL database, this will allowed in the future to have a much cleaner user experience (When it's finish!).
+Create a book Library using Visual Basic 6.0, this will allowed to install a windows app that make easer for you to keep track of your books!
 
 ## Images of Project
 
-![1](imgs/API_png.png)
-![2](imgs/SQL_relationship.png)
+![1](/assets/login.png)
+![2](/assets/Dashboard.png)
+![3](/assets/History.png)
+![4](/assets/Wishlist.png)
+![5](/assets/History.png)
+![6](/assets/sql_mega_library_relation.png)
 
 ## Instructions
 
-When cloning this repository you must add the connection to your own SQL Server with the direction you wanna use for this API.
+When cloning this repository you must add the connection to your own SQL Server with the direction you wanna use for this project.
 
 ## How it was done
 
-Since it was my first time working on C# and .Net Framework things didn't go smoothly but it's looking promising with the help of all the courses that Liderly provides us.
+With LOTS of research since there isn't much Visual Basic 6 content to learn from since it's really old. 
 
 ## Known Issues
 
-Favorites is not functional yet, and some parts in the front-end still need some work because of the API changes. 
+Some parts may still not be fully functional but I'm working to fix them fast!
 
 ## Retrospective
 
 | What was done well? | What can I do differently? | What didn't go well? |
 ------------------|----------------------------|-----------------------
-| Route making and connecting everything to the project went really good. | Having a more clearer idea of how i want the database would have help | Favorites it's still not functional cause i'm still trying to understand how it should work.
+| I'm pretty happy with they way it looks, still can work on the styling further | Having a more clearer idea of how to properly pull all the data from an api will make much easer to work with | some button can break and still need some work to do

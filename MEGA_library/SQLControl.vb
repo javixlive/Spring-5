@@ -83,7 +83,7 @@ Public Class SQLControl
         SQLCon.Open()
         SQLCmd = New SqlCommand("sp_get_History", SQLCon)
         SQLCmd.CommandType = CommandType.StoredProcedure
-        SQLCmd.Parameters.Add("@userId", SqlDbType.VarChar).Value = id
+        SQLCmd.Parameters.Add("@userId", SqlDbType.UniqueIdentifier).Value = id
         SQLadapt = New SqlDataAdapter(SQLCmd)
         dt = New DataTable()
         SQLadapt.Fill(dt)
@@ -95,7 +95,7 @@ Public Class SQLControl
         SQLCon.Open()
         SQLCmd = New SqlCommand("sp_get_wishlist", SQLCon)
         SQLCmd.CommandType = CommandType.StoredProcedure
-        SQLCmd.Parameters.Add("@userId", SqlDbType.VarChar).Value = id
+        SQLCmd.Parameters.Add("@userId", SqlDbType.UniqueIdentifier).Value = id
         SQLadapt = New SqlDataAdapter(SQLCmd)
         dt = New DataTable()
         SQLadapt.Fill(dt)
@@ -107,7 +107,7 @@ Public Class SQLControl
         SQLCon.Open()
         SQLCmd = New SqlCommand("sp_get_FavBooks", SQLCon)
         SQLCmd.CommandType = CommandType.StoredProcedure
-        SQLCmd.Parameters.Add("@userId", SqlDbType.VarChar).Value = id
+        SQLCmd.Parameters.Add("@userId", SqlDbType.UniqueIdentifier).Value = id
         SQLadapt = New SqlDataAdapter(SQLCmd)
         dt = New DataTable()
         SQLadapt.Fill(dt)
