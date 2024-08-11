@@ -134,34 +134,40 @@ GO
 
 -----------------------------------------------------------------------
 
-Create procedure [dbo].[sp_get_FavBooks]
+CREATE procedure [dbo].[sp_get_FavBooks]
 	@userId uniqueidentifier
 AS
 BEGIN
-	Select * from FavBooks Where
-	userId=@userId
+	Select * from Books 
+	JOIN FavBooks
+	ON FavBooks.bookId = Books.bookId
+	WHERE FavBooks.userId = @userId
 END
 GO
 
 -----------------------------------------------------------------------
 
-Create procedure [dbo].[sp_get_History]
+CREATE procedure [dbo].[sp_get_History]
 	@userId uniqueidentifier
 AS
 BEGIN
-	Select * from History Where
-	userId=@userId
+	Select * from Books 
+	Join History
+	ON Books.bookId = History.bookId
+	WHERE History.userId = @userId
 END
 GO
 
 -----------------------------------------------------------------------
 
-Create procedure [dbo].[sp_get_wishlist]
+CREATE procedure [dbo].[sp_get_wishlist]
 	@userId uniqueidentifier
 AS
 BEGIN
-	Select * from WishBooks Where
-	userId=@userId
+	Select * from Books 
+	JOIN WishBooks
+	On WishBooks.bookId = Books.bookId
+	WHERE WishBooks.userId = @userId
 END
 GO
 
